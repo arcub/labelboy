@@ -1,0 +1,221 @@
+*PPD-Adobe: "4.3"
+*%
+*% Create By PMS 2017/12/04 11:12
+*%
+*FormatVersion: "4.3"
+*FileVersion: "1.0"
+*LanguageVersion: English
+*LanguageEncoding: ISOLatin1
+*PCFileName: "ITPP130.ppd"
+*Manufacturer: "MUNBYN"
+*Product: "ITPP130"
+*ModelName: "ITPP130"
+*ShortNickName: "ITPP130"
+*NickName: "ITPP130"
+*PSVersion: "(3010.000) 550"
+*PSVersion: "(3010.000) 651"
+*PSVersion: "(3010.000) 652"
+*PSVersion: "(3010.000) 653"
+*PSVersion: "(3010.000) 704"
+*PSVersion: "(3010.000) 705"
+*PSVersion: "(3010.000) 800"
+*LanguageLevel: "3"
+*ColorDevice: False
+*DefaultColorSpace: Gray
+*FileSystem: False
+*Throughput: "1"
+*LandscapeOrientation: Plus90
+*TTRasterizer: Type42
+*cupsVersion: 1.2
+*cupsManualCopies: False
+*cupsFilter: "application/vnd.cups-raster 0 rastertobarcode"
+*cupsLanguages: "en zh_CN"
+
+
+*MaxMediaWidth: "306.14"
+*MaxMediaHeight: "2880"
+*HWMargins: 0.00 0.00 0.00 0.00
+*CustomPageSize True: "pop pop pop <</PageSize[5 -2 roll]/ImagingBBox null>>setpagedevice"
+*ParamCustomPageSize Width: 1 points 14.17 306.14
+*ParamCustomPageSize Height: 2 points 14.17 2880
+*ParamCustomPageSize WidthOffset: 3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation: 5 int 0 0
+*RequiresPageRegion All: True
+*TscAttrib UnitMode: mm
+
+*OpenGroup: General/General
+
+*OpenUI *PageSize/Page Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: w225h125
+*PageSize w225h125/2 x 1 (2.25 in x 1.25 in): "<</PageSize[162 90]/ImagingBBox null>>setpagedevice"
+*PageSize w2h4/2 x 4 (2.00 in x 4.00 in): "<</PageSize[144 288]/ImagingBBox null>>setpagedevice"
+*PageSize w4h4/4 x 4 (4.00 in x 4.00 in): "<</PageSize[288 288]/ImagingBBox null>>setpagedevice"
+*PageSize w4h6/4 x 6 (4.00 in x 6.00 in): "<</PageSize[288 432]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion/Page Size: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: w225h125
+*PageRegion w225h125/2 x 1 (2.25 in x 1.25 in): "<</PageSize[162 90]/ImagingBBox null>>setpagedevice"
+*PageRegion w2h4/2 x 4 (2.00 in x 4.00 in): "<</PageSize[144 288]/ImagingBBox null>>setpagedevice"
+*PageRegion w4h4/4 x 4 (4.00 in x 4.00 in): "<</PageSize[288 288]/ImagingBBox null>>setpagedevice"
+*PageRegion w4h6/4 x 6 (4.00 in x 6.00 in): "<</PageSize[288 432]/ImagingBBox null>>setpagedevice"
+*CloseUI: *PageRegion
+
+*ImageableArea w225h125/2 x 1 (2.25 in x 1.25 in): "0 0 162 90"
+*ImageableArea w2h4/2 x 4 (2.00 in x 4.00 in): "0 0 144 288"
+*ImageableArea w4h4/4 x 4 (4.00 in x 4.00 in): "0 0 288 288"
+*ImageableArea w4h6/4 x 6 (4.00 in x 6.00 in): "0 0 288 432"
+
+
+*PaperDimension w225h125/2 x 1 (2.25 in x 1.25 in): "162 90"
+*PaperDimension w2h4/2 x 4 (2.00 in x 4.00 in): "144 288"
+*PaperDimension w4h4/4 x 4 (4.00 in x 4.00 in): "288 288"
+*PaperDimension w4h6/4 x 6 (4.00 in x 6.00 in): "288 432"
+
+*OpenUI *Collate/Collate: Boolean
+*OrderDependency: 200 AnySetup *Collate
+*DefaultCollate: False
+*Collate True/Yes: "%%"
+*Collate False/No: "%%"
+*CloseUI: *Collate
+
+*CloseGroup: General
+
+*OpenGroup: PageSet/Page Options
+
+*OpenUI *PrintSpeed/Print Speed: PickOne
+*OrderDependency: 110 AnySetup *PrintSpeed
+*DefaultPrintSpeed: 2
+*PrintSpeed 1/50.8 mm/s: "%%"
+*PrintSpeed 2/76.2 mm/s: "%%"
+*PrintSpeed 3/101.6 mm/s: "%%"
+*PrintSpeed 4/127.0 mm/s: "%%"
+*PrintSpeed 5/152.4 mm/s: "%%"
+*CloseUI: *PrintSpeed
+
+*OpenUI *PrintDensity/PrintDensity: PickOne
+*OrderDependency: 120 AnySetup *PrintDensity
+*DefaultPrintDensity: 7
+*PrintDensity 0: "%%"
+*PrintDensity 1: "%%"
+*PrintDensity 2: "%%"
+*PrintDensity 3: "%%"
+*PrintDensity 4: "%%"
+*PrintDensity 5: "%%"
+*PrintDensity 6: "%%"
+*PrintDensity 7: "%%"
+*PrintDensity 8: "%%"
+*PrintDensity 9: "%%"
+*PrintDensity 10: "%%"
+*PrintDensity 11: "%%"
+*PrintDensity 12: "%%"
+*PrintDensity 13: "%%"
+*PrintDensity 14: "%%"
+*PrintDensity 15: "%%"
+*CloseUI: *PrintDensity
+
+*CloseGroup: PageSet
+
+*OpenGroup: Media/Media Setting
+
+*OpenUI *PaperType/Type: PickOne
+*OrderDependency: 120 AnySetup *PaperType
+*DefaultPaperType: 0
+*PaperType 0/Label with Gaps: "%%"
+*PaperType 1/Label with Mark: "%%"
+*PaperType 2/Continue: "%%"
+*CloseUI: *PaperType
+
+*OpenUI *MarkHeight/Gaps Height: PickOne
+*OrderDependency: 150 AnySetup *MarkHeight
+*DefaultMarkHeight: 3
+*MarkHeight 0/0mm: "%%"
+*MarkHeight 1/1mm: "%%"
+*MarkHeight 2/2mm: "%%"
+*MarkHeight 3/3mm: "%%"
+*MarkHeight 4/4mm: "%%"
+*MarkHeight 5/5mm: "%%"
+*MarkHeight 6/6mm: "%%"
+*MarkHeight 7/7mm: "%%"
+*MarkHeight 8/8mm: "%%"
+*MarkHeight 9/9mm: "%%"
+*MarkHeight 10/10mm: "%%"
+*MarkHeight 11/11mm: "%%"
+*MarkHeight 12/12mm: "%%"
+*MarkHeight 13/13mm: "%%"
+*MarkHeight 14/14mm: "%%"
+*MarkHeight 15/15mm: "%%"
+*MarkHeight 16/16mm: "%%"
+*MarkHeight 17/17mm: "%%"
+*MarkHeight 18/18mm: "%%"
+*MarkHeight 19/19mm: "%%"
+*MarkHeight 20/20mm: "%%"
+*CloseUI: *MarkHeight
+
+*CloseGroup: Media
+
+*OpenGroup:Quality/Quality
+*OpenUI *Resolution/Resolution: PickOne
+*OrderDependency: 300 AnySetup *Resolution
+*DefaultResolution: 203dpi
+*Resolution 203dpi/203 dpi x 203 dpi: "<</HWResolution[203 203]>>setpagedevice"
+*CloseUI: *Resolution
+
+
+*OpenUI *ColorOption/ColorOption: PickOne
+*OrderDependency: 310 AnySetup *ColorOption
+*DefaultColorOption: 1
+*ColorOption 0/None:	"<</HWResolution[203 203]/cupsBitsPerColor 8/cupsColorSpace 3>>setpagedevice"
+*ColorOption 1/Black:	"<</HWResolution[203 203]/cupsBitsPerColor 1/cupsRowCount 8/cupsRowFeed 0/cupsRowStep 0/cupsColorSpace 3>>setpagedevice"
+*ColorOption 2/Gray:	"<</HWResolution[203 203]/cupsBitsPerColor 8/cupsColorSpace 0>>setpagedevice"
+*ColorOption 3/RGB:		"<</HWResolution[203 203]/cupsColorOrder 0/cupsBitsPerColor 8/cupsBitsPerPixel 24/cupsColorSpace 1>>setpagedevice"
+*CloseUI: *ColorOption
+*CloseGroup: Quality
+
+
+
+*% Generic boilerplate PPD stuff as standard PostScript fonts and so on
+
+*DefaultFont: Courier
+*Font AvantGarde-Book: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-BookOblique: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-Demi: Standard "(001.007S)" Standard ROM
+*Font AvantGarde-DemiOblique: Standard "(001.007S)" Standard ROM
+*Font Bookman-Demi: Standard "(001.004S)" Standard ROM
+*Font Bookman-DemiItalic: Standard "(001.004S)" Standard ROM
+*Font Bookman-Light: Standard "(001.004S)" Standard ROM
+*Font Bookman-LightItalic: Standard "(001.004S)" Standard ROM
+*Font Courier: Standard "(002.004S)" Standard ROM
+*Font Courier-Bold: Standard "(002.004S)" Standard ROM
+*Font Courier-BoldOblique: Standard "(002.004S)" Standard ROM
+*Font Courier-Oblique: Standard "(002.004S)" Standard ROM
+*Font Helvetica: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Narrow-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-Oblique: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Oblique: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Bold: Standard "(001.009S)" Standard ROM
+*Font NewCenturySchlbk-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font NewCenturySchlbk-Italic: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Roman: Standard "(001.007S)" Standard ROM
+*Font Palatino-Bold: Standard "(001.005S)" Standard ROM
+*Font Palatino-BoldItalic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Italic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Roman: Standard "(001.005S)" Standard ROM
+*Font Symbol: Special "(001.007S)" Special ROM
+*Font Times-Bold: Standard "(001.007S)" Standard ROM
+*Font Times-BoldItalic: Standard "(001.009S)" Standard ROM
+*Font Times-Italic: Standard "(001.007S)" Standard ROM
+*Font Times-Roman: Standard "(001.007S)" Standard ROM
+*Font ZapfChancery-MediumItalic: Standard "(001.007S)" Standard ROM
+*Font ZapfDingbats: Special "(001.004S)" Standard ROM
+
+*%
+*% End of PPD
+*%
