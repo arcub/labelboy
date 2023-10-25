@@ -22,6 +22,12 @@ else:
     exit()
 #code = "JAFSMGEFB/775/CRS"
 
+path = arguments[0].split("/")
+path.pop()
+path = "/".join(path) + "/"
+#print(path)
+#exit()
+
 code = code.upper()
 codebits = code.split("/")
 
@@ -49,15 +55,15 @@ im.paste(Image.open("qrcode.png").resize((74*8, 74*8)), (8*8, 8*8))
 imd = ImageDraw.Draw(im)
 
 
-ibm_mono_s_big = ImageFont.truetype("IBMPlexMono-Bold.ttf", 145)
-ibm_sans_s_med = ImageFont.truetype("IBMPlexSans-Medium.ttf", 72)
+ibm_mono_s_big = ImageFont.truetype(path + "IBMPlexMono-Bold.ttf", 145)
+ibm_sans_s_med = ImageFont.truetype(path + "IBMPlexSans-Medium.ttf", 72)
 
-ibm_mono_s_med = ImageFont.truetype("IBMPlexMono-Bold.ttf", 96)
+ibm_mono_s_med = ImageFont.truetype(path + "IBMPlexMono-Bold.ttf", 96)
 
-ibm_sans_s_med_b = ImageFont.truetype("IBMPlexSans-Bold.ttf", 72)
-ibm_sans_s_sml = ImageFont.truetype("IBMPlexSans-Medium.ttf", 50)
-ibm_mono_s_sml = ImageFont.truetype("IBMPlexMono-Bold.ttf", 48)
-ibm_sans_s_sml_b = ImageFont.truetype("IBMPlexSans-Bold.ttf", 48)
+ibm_sans_s_med_b = ImageFont.truetype(path + "IBMPlexSans-Bold.ttf", 72)
+ibm_sans_s_sml = ImageFont.truetype(path + "IBMPlexSans-Medium.ttf", 50)
+ibm_mono_s_sml = ImageFont.truetype(path + "IBMPlexMono-Bold.ttf", 48)
+ibm_sans_s_sml_b = ImageFont.truetype(path + "IBMPlexSans-Bold.ttf", 48)
  
 # Add Text to an image
 #imd.fontmode = "1" # Disable antialiasing
