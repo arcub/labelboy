@@ -10,6 +10,7 @@ from tempfile import mktemp
 from time import sleep
 import segno
 import sys
+import os
 
 arguments = sys.argv
 
@@ -53,7 +54,7 @@ im = Image.new('RGBA', (90*8, 162*8))
 #im.paste(Image.open('logo.png').resize((162, 90)), ( 0, 0, 162, 90))
 im.paste(Image.open(path + "qrcode.png").resize((74*8, 74*8)), (8*8, 8*8))
 imd = ImageDraw.Draw(im)
-
+os.remove(path + "qrcode.png")
 
 ibm_mono_s_big = ImageFont.truetype(path + "IBMPlexMono-Bold.ttf", 145)
 ibm_sans_s_med = ImageFont.truetype(path + "IBMPlexSans-Medium.ttf", 72)
