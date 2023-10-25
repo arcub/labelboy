@@ -40,7 +40,7 @@ takehome = (gperms & 2) > 0
 reconf = (gperms & 1) > 0
 
 qrcode = segno.make_qr("https://crs.indent.one/id/" + code)
-qrcode.save("qrcode.png", scale=4, border=0)
+qrcode.save(path + "qrcode.png", scale=4, border=0)
 
 # Set up CUPS
 conn = cups.Connection()
@@ -51,7 +51,7 @@ cups.setUser('crs')
 # Image (code taken from boothcam.py)
 im = Image.new('RGBA', (90*8, 162*8))
 #im.paste(Image.open('logo.png').resize((162, 90)), ( 0, 0, 162, 90))
-im.paste(Image.open("qrcode.png").resize((74*8, 74*8)), (8*8, 8*8))
+im.paste(Image.open(path + "qrcode.png").resize((74*8, 74*8)), (8*8, 8*8))
 imd = ImageDraw.Draw(im)
 
 
@@ -86,19 +86,19 @@ imd.text((7*8, (96*8) + (40*8)), "Take home", font=ibm_sans_s_med_b, fill=(0, 0,
 imd.text((7*8, (96*8) + (48*8)), "Reconfigure", font=ibm_sans_s_med_b, fill=(0, 0, 0))
 
 if (modify):
-    im.paste(Image.open("yes.png").resize((10*8, 10*8)), (74*8, (96*8) + (33*8)))
+    im.paste(Image.open(path + "yes.png").resize((10*8, 10*8)), (74*8, (96*8) + (33*8)))
 else:
-    im.paste(Image.open("no.png").resize((10*8, 10*8)), (74*8, (96*8) + (33*8)))
+    im.paste(Image.open(path + "no.png").resize((10*8, 10*8)), (74*8, (96*8) + (33*8)))
     
 if (takehome):
-    im.paste(Image.open("yes.png").resize((10*8, 10*8)), (74*8, (96*8) + (41*8)))
+    im.paste(Image.open(path + "yes.png").resize((10*8, 10*8)), (74*8, (96*8) + (41*8)))
 else:
-    im.paste(Image.open("no.png").resize((10*8, 10*8)), (74*8, (96*8) + (41*8)))
+    im.paste(Image.open(path + "no.png").resize((10*8, 10*8)), (74*8, (96*8) + (41*8)))
     
 if (reconf):
-    im.paste(Image.open("yes.png").resize((10*8, 10*8)), (74*8, (96*8) + (49*8)))
+    im.paste(Image.open(path + "yes.png").resize((10*8, 10*8)), (74*8, (96*8) + (49*8)))
 else:
-    im.paste(Image.open("no.png").resize((10*8, 10*8)), (74*8, (96*8) + (49*8)))
+    im.paste(Image.open(path + "no.png").resize((10*8, 10*8)), (74*8, (96*8) + (49*8)))
 
 #imd.text((7*8, (84*8) + (32*8)), "Modify", font=ibm_sans_s_med, fill=(0, 0, 0))
 #imd.text((7*8, (84*8) + (42*8)), "Build with", font=ibm_sans_s_med, fill=(0, 0, 0))
