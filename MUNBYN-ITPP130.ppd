@@ -28,7 +28,7 @@
 *TTRasterizer: Type42
 *cupsVersion: 1.2
 *cupsManualCopies: False
-*cupsFilter: "application/vnd.cups-raster 0 rastertobarcode"
+*cupsFilter: "application/vnd.cups-raster 0 rastertotspl"
 *cupsLanguages: "en zh_CN"
 
 
@@ -48,7 +48,7 @@
 
 *OpenUI *PageSize/Page Size: PickOne
 *OrderDependency: 10 AnySetup *PageSize
-*DefaultPageSize: w225h125
+*DefaultPageSize: w4h6
 *PageSize w225h125/2 x 1 (2.25 in x 1.25 in): "<</PageSize[162 90]/ImagingBBox null>>setpagedevice"
 *PageSize w2h4/2 x 4 (2.00 in x 4.00 in): "<</PageSize[144 288]/ImagingBBox null>>setpagedevice"
 *PageSize w4h4/4 x 4 (4.00 in x 4.00 in): "<</PageSize[288 288]/ImagingBBox null>>setpagedevice"
@@ -57,7 +57,7 @@
 
 *OpenUI *PageRegion/Page Size: PickOne
 *OrderDependency: 10 AnySetup *PageRegion
-*DefaultPageRegion: w225h125
+*DefaultPageRegion: w4h6
 *PageRegion w225h125/2 x 1 (2.25 in x 1.25 in): "<</PageSize[162 90]/ImagingBBox null>>setpagedevice"
 *PageRegion w2h4/2 x 4 (2.00 in x 4.00 in): "<</PageSize[144 288]/ImagingBBox null>>setpagedevice"
 *PageRegion w4h4/4 x 4 (4.00 in x 4.00 in): "<</PageSize[288 288]/ImagingBBox null>>setpagedevice"
